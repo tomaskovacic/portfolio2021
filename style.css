@@ -1,54 +1,223 @@
-html {
+*,
+*::before,
+*::after{
     margin: 0;
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    padding: 0 60px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+section {
+    scroll-margin-top: 80px;
+}
+
+html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    padding: 0;
+    background-color: #fbfbfb;
+    scroll-behavior:smooth;
+}
+
+.main {
+    max-width: 1280px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.work {
+    background-color: #dbdbdb;
+    margin-top: 100px;
+}
+
+.footer {
+    background-color: #08415C;
+    height: 200px;
+}
+
+.socials {
+    max-width: 1280px;
+	margin: 0 auto;
+	padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 60px !important;
+}
+
+.container {
+    border: solid 1px white;
+    margin: 0px 15px !important;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:hover {
+    opacity: 0.5;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.original {
+    display: flex;
+    justify-content: center;
+    color: #6B818C;
+    margin-top: 20px;
+}
+
+.red {
+    color: #DC136C;
+}
+
+.space{
+    margin-left: 10px;
+}
+
+.button__nav {
+    border-bottom: solid 1px #021924;
+    padding: 10px 0;
+}
+
+.button__nav:hover {
+    border-bottom: solid 1px white;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+ .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #08415C;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .dot1 {
+    top: 30%;
+    right: 40%;
+  }
+
+  .dot2 {
+    height: 250px;
+    width: 250px;
+    top: 30%;
+    right: 45%;
+    background-color: #317594;
+  }
+
+  .dot3 {
+    height: 60px;
+    width: 60px;
+    top: 20%;
+    right: 45%;
+    background-color: #4e8ca8;
+  }
+
+
 .front {
-    height: 1100px;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
     cursor: default ;
+    background: rgb(220,19,108);
+    background: radial-gradient(circle, rgba(220,19,108,1) 0%, rgba(8,65,92,1) 100%);
 }
 
 .front__h1 {
-    font-size: 100px;
+    color: #021924;
+    font-weight: 700;
 }
 
 .front__h2 {
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 10px;
+    font-weight: 300;
+    color: white;
+}
+
+.front-wrapper {
+    text-align: center;
+    padding-top: 25vh;
 }
 
 .front-dots{
-    margin-top: 300px;
+    margin-top: 30vh;
     display: flex;
     flex-flow: column;
     align-items: center;
+    color: white;
 }
 
 .header {
-    color: white;
     font-size: 30px;
     display: flex;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 30px 60px;
+    background-color: #021924;
+    color: white;
+    border-bottom: 1px solid #DC136C;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.skill {
-    padding-top: 200px;
+.header-nav-right {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.about-me {
+    color: white;
+    margin-top: 5vh;
+    font-size: 25px;
+    font-weight: 200;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.about-me:hover {
+    color: #021924;
+    border: 1px solid #021924;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.line {
+    width: 100px;
+    height: 5px;
+    background-color: #08415C;
+    margin-top: 20px;
 }
 
 .skill__h1 {
     font-size: 40px;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 .work {
@@ -58,19 +227,25 @@ html {
 .skill__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 200px;
 }
 
-.skill__left {
-    border: 1px red solid;
+
+
+.skill__div {
     width: 100%;
-    height: 1000px;
+    height: 70vh;
 }
 
-.skill__right {
-    border: 1px red solid;
-    width: 100%;
-    height: 1000px;
+
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 

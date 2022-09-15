@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomas</title>
+    <title>Tomas Kovačič | Front-end developer</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,63 +14,137 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-            <span>
-                Logo
-            </span>
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24"
-                    style=" fill:white;">
-                    <path
-                        d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
-                    </path>
-                </svg>
-            </span>
+    <section class="header">
+        <span>
+            Logo
+        </span>
+        <span class="header-nav-right">
+            <svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                viewBox="0 0 24 24" style=" fill:black;">
+                <path
+                    d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
+                </path>
+            </svg>
+            <button class="button__nav" onclick="location.href='#about';">About me</button>
+            <button class="button__nav" onclick="location.href='#work';">My work</button>
+            <button class="button__nav" onclick="location.href='#contact';">Contact</button>
+        </span>
+    </section>
+    <section class="front" onselectstart="return false">
+        <div class="front-wrapper">
+            <div class="front__h2">Hi, I'm <span class="front__h1">Tomas Kovačič</span>. </div>
+            <div class="front__h2">I'm a front-end web developer.</div>
         </div>
-        <div class="front" onselectstart="return false">
-            <div class="front__h1">Tomas Kovačič</div>
-            <div class="front__h2">Front-end developer</div>
-            <div class="front-dots">
-                <div class="front-dots__dot">
-                    .
+        <div>
+            <button class="about-me" onclick="location.href='#about';">About me</button>
+        </div>
+        <div class="front-dots">
+            <div class="front-dots__dot">
+                .
+            </div>
+            <div class="front-dots__dot">
+                .
+            </div>
+            <div class="front-dots__dot">
+                .
+            </div>
+            <div class="front-dots__dot" style="padding-top: 5px;">
+                ᐯ
+            </div>
+        </div>
+    </section>
+        <!-- <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div> -->
+        <section id="about" class="about">
+            <div class="main">
+            <div class="skill">
+                <div class="skill__h1" id="section_about">
+                    About
+                    <div class="line"></div>
                 </div>
-                <div class="front-dots__dot">
-                    .
-                </div>
-                <div class="front-dots__dot">
-                    .
-                </div>
-                <div class="front-dots__dot" style="padding-top: 5px;">
-                    ᐯ
+                <div class="skill__wrapper">
+                    <div class="skill__div">
+                        about1
+                    </div>
+                    <div class="skill__div">
+                        about2
+                    </div>
+                    <div class="skill__div">
+                        about3
+                    </div>
+                    <div class="skill__div">
+                        about4
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="skill">
-            <div class="skill__h1">
-                My work
-            </div>
-            <div class="skill__wrapper">
-                <div class="skill__left">
-                    skill left
+        </section>
+        <section id="work"class="work">
+            <div class="main">
+            <div class="skill">
+                <div class="skill__h1">
+                    My work
+                    <div class="line"></div>
                 </div>
-                <div class="skill__right">
-                    skill right
+                <div class="skill__wrapper">
+                    <div class="skill__div">
+                        <div class="wrapper-border">
+                            <img src="podrobno.png" height="100%" width="100%"/>
+                            <h2>Spletna stran z recepti</h2>
+                            <h5>Vue</h5>
+                        </div>
+                    </div>
+                    <div class="skill__div">
+                        about3
+                    </div>
+                    <div class="skill__div">
+                        about4
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="work">
-            <div>
-                work1
             </div>
-            <div>
-                work2
+        </section>
+        <section id="contact" class="contact">
+            <div class="main">
+            <div class="skill">
+                <div class="skill__h1">
+                    Contact
+                    <div class="line"></div>
+                </div>
+                <div class="skill__wrapper">
+                    <div class="skill__div">
+                        form
+                    </div>
+                </div>
             </div>
+            </div>
+        </section>
+    <section class="footer">
+        <div class="socials">
+            <button onclick="location.href='https://github.com/tomaskovacic';" class="container"><svg class="icon"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g data-name="Github 1">
+                        <g data-name="&lt;Group&gt;">
+                            <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 .5A11.5 11.5 0 0 0 .5 12a11.82 11.82 0 0 0 9 11.5v-3h-1c-2.62 0-3.54-4-5-4 2.79 0 3.33 2 5 2a.89.89 0 0 0 1-1v-.35c-2.91-.82-5-3-5-5.65a5.26 5.26 0 0 1 1.57-3.66A3.16 3.16 0 0 1 6.5 4.5 5.26 5.26 0 0 1 8.88 6a9.14 9.14 0 0 1 6.24 0 5.26 5.26 0 0 1 2.38-1.5 3.16 3.16 0 0 1 .43 3.34 5.26 5.26 0 0 1 1.57 3.66c0 2.74-2.29 5-5.42 5.76a4.68 4.68 0 0 1 .42 2.24v4a11.82 11.82 0 0 0 9-11.5A11.5 11.5 0 0 0 12 .5Z"
+                                data-name="&lt;Path&gt;" />
+                        </g>
+                    </g>
+                </svg></button>
+            <button onclick="location.href='https://www.instagram.com/tomas.kovacic/';" class="container"><svg
+                    class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <g fill="none" stroke="white" stroke-miterlimit="10">
+                        <path d="M11.5 15.5h-7a4 4 0 0 1-4-4v-7a4 4 0 0 1 4-4h7a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4z" />
+                        <circle cx="8" cy="8" r="3.5" />
+                        <circle cx="12.5" cy="3.5" r=".5" />
+                    </g>
+                </svg></button>
         </div>
-        <div class="footer">
-            <div class="contact">070705134</div>
+        <div class="original">
+            Tomas Kovačič<span class="red space"> ©2022</span>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>
